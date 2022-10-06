@@ -25,7 +25,7 @@
             <option value="December">December</option>
         </select>
         
-        <select name="sday" id="sday" onselect="selected()">
+        <select name="sday" id="sday" >
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -59,10 +59,12 @@
             <option value="31">31</option>
         
         </select><br>
-        <input type="button" value="Verify" onclick="clicar()">
-        <p id="para"></p>
+        <input type="button" value="Verify" onclick="clicar()"; this.onclick=null;>
+        <h2 id="para"></h2>
         <div id="div1">
-
+            <img src="" alt="" id="trocarImg">
+            <p id="exp"></p>
+            <p><a href="" id="link"></a></p>
         </div>
 
     </section>

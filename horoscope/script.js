@@ -2,26 +2,34 @@ function clicar() {
     var month = document.getElementById('smonth') // variavel do mes input
     var parag = document.getElementById('para') // variavel para parag
     var day = document.getElementById('sday') // variavel do dia input
-    var div = document.getElementById('div1')
-    
+    // var div = document.getElementById('div1')
+
+    let signExp = document.getElementById("exp");
+    let link = document.getElementById("link");
 
     if (month.value == 'February' && Number(day.value) > 29 || (month.value == 'April' || month.value == 'June' || month.value == 'September' || month.value == 'November') && Number(day.value) > 30) {
 
-    window.alert(`Invalide date. Please try again ${Number(day.value)}`)
+    window.alert(`Invalide date. Please try again`)
 
     } else {
-        var img = document.createElement('img')
-        img.setAttribute('id', 'image')
+        // var img = document.createElement('img')
+        // img.setAttribute('id', 'image')
+
+        let img = document.getElementById("trocarImg")
 
         if (month.value == 'March' && Number(day.value) >= 21 || month.value == 'April' && Number(day.value) < 20){
 
-        parag.innerHTML = 'Your Zodiac sign  is Aries'
-        img.setAttribute('src', 'aries.jpg')
+            parag.innerHTML = 'Your Zodiac sign  is Aries'
+            
+            img.setAttribute('src', 'aries.jpg')
+            // signExp.innerHTML = "The first sign of the zodiac, Aries loves to be number one. Naturally, this dynamic fire sign is no stranger to competition. Bold and ambitious, Aries dives headfirst into even the most challenging situations—and they'll make sure they always come out on top!"
+
+            // link.attri
 
         } else if (month.value == 'April' && Number(day.value) > 19 || month.value == 'May' && Number(day.value) <= 20) {
 
-        parag.innerHTML = 'Your Zodiac sign is Taurus'
-        img.setAttribute('src', 'taurus.jpg')
+            parag.innerHTML = 'Your Zodiac sign is Taurus'
+            img.setAttribute('src', 'taurus.jpg')
 
         } else if (month.value == 'May' && Number(day.value) >=21 || month.value == 'June' && Number(day.value) <= 20) {
 
@@ -69,13 +77,14 @@ function clicar() {
             img.setAttribute('src', 'aquarius.jpg')
 
 
-        } else if (month.value == 'February' && Number(day.value) <= 19 || month.value == 'March' && Number(day.value) <= 20){
+        } else if (month.value == 'February' && Number(day.value) >= 19 || month.value == 'March' && Number(day.value) <= 20){
             parag.innerHTML = 'Your Zodiac sign is Pisces'
             img.setAttribute('src', 'pisces.jpg')
 
 
         }
-        div.appendChild(img)
+        // div.appendChild(img)
+        
         
 
         
@@ -83,14 +92,6 @@ function clicar() {
     }
     
     
-    /*
     
-    if (month.value == 'March' && Number(day.value) >= 1) {
-        parag.innerHTML = `O mes escolhido eh janeiro`
-    } else{
-        parag.innerHTML = 'Outro mes'
-    } 
-
-    */
     
 }
