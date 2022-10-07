@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
 /* #7ebee8 - Blue
  #c745a7 - Pink
  #a480c7 - purple
@@ -76,6 +78,16 @@ input[type="button"]:hover {
 
 h2 {
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p#exp {
+    padding-top: 10px;
+    color: rgb(78, 75, 75);
 }
 
 img#trocarImg {
