@@ -65,11 +65,14 @@ form {
     margin-bottom: 20px;
 }
 
+#div1 {
+    height: 0px;
+}
 img#trocarImg {
     width: 40vw;
 }
 
-p#exp {
+p{
     font-weight: lighter;
 }
 
